@@ -1,11 +1,11 @@
 {
   "author": "Mapnik Developers",
-  "name": "mapnik-reference",
-  "description": "Reference for Mapnik Styling Options",
-  "version": "8.5.1",
+  "name": "tangram-reference",
+  "description": "Reference for Tangram Styling Options",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mapnik/mapnik-reference.git"
+    "url": "git://github.com/cartodb/trangram-reference.git"
   },
   "scripts": {
       "test": "mocha -R spec --timeout 50000"
