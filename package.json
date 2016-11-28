@@ -1,8 +1,8 @@
 {
-  "author": "Mapnik Developers",
+  "author": "Carto",
   "name": "tangram-reference",
   "description": "Reference for Tangram Styling Options",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/cartodb/trangram-reference.git"
