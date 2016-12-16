@@ -40,6 +40,14 @@
             }
         },
         "markers": {
+            "file": {
+                "css": "marker-file",
+                "doc": "A file that this marker shows at each placement. If no file is given, the marker will show an ellipse. Accepted formats: svg, jpg, png, tiff, and webp.",
+                "default-value": "none",
+                "default-meaning": "An ellipse or circle, if width equals height.",
+                "type": "uri",
+                "expression":true
+            },
             "opacity": {
                 "css": "marker-opacity",
                 "doc": "The overall opacity of the marker, if set, overrides both the opacity of both the fill and stroke",
@@ -52,6 +60,54 @@
                 "default-value": "blue",
                 "doc": "The color of the area of the marker.",
                 "type": "color"
+            },
+            "allow-overlap": {
+                "css": "marker-allow-overlap",
+                "type": "boolean",
+                "expression":true,
+                "default-value": false,
+                "doc": "Control whether overlapping markers are shown or hidden.",
+                "default-meaning": "Do not allow markers to overlap with each other - overlapping markers will not be shown."
+            },
+            "width": {
+                "css": "marker-width",
+                "default-value": 10.0,
+                "doc": "The width of the marker, if using one of the default types.",
+                "type": "float",
+                "expression":true,
+                "default-meaning": "The marker width is 10 pixels."
+            },
+            "fill-opacity": {
+                "css": "marker-fill-opacity",
+                "doc": "The fill opacity of the marker.",
+                "default-value": 1.0,
+                "expression":true,
+                "default-meaning": "Color is fully opaque.",
+                "type": "float"
+            },
+            "stroke": {
+                "css": "marker-line-color",
+                "doc": "The color of the stroke around the marker.",
+                "default-value": "black",
+                "type": "color",
+                "expression":true,
+                "default-meaning": "The marker will be drawn with a black outline."
+            },
+            "stroke-width": {
+                "css": "marker-line-width",
+                "default-value": 0.5,
+                "doc": "The width of the stroke around the marker, in pixels. This is positioned on the boundary, so high values can cover the area itself.",
+                "type": "float",
+                "expression":true,
+                "default-meaning": "The marker will be drawn with an outline of .5 pixels wide."
+            },
+            "stroke-opacity": {
+                "css": "marker-line-opacity",
+                "default-value": 1.0,
+                "default-meaning": "Color is fully opaque.",
+                "doc": "The opacity of a line.",
+                "type": "float",
+                "expression":true
             }
         }
     },
