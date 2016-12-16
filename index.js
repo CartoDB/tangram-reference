@@ -3,19 +3,7 @@ var fs = require('fs'),
     existsSync = require('fs').existsSync || require('path').existsSync;
 
 var versions = [
- '2.0.0',
- '2.0.1',
- '2.0.2',
- '2.1.0',
- '2.1.1',
- '2.2.0',
- '2.3.0',
- '3.0.0',
- '3.0.3',
- '3.0.4',
- '3.0.5',
- '3.0.6',
- '3.0.7'
+    '1.0.0'
 ];
 
 module.exports.versions = versions;
