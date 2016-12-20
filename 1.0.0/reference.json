@@ -85,6 +85,17 @@
                 "default-meaning": "Color is fully opaque.",
                 "type": "float"
             },
+            "comp-op": {
+                "css": "marker-comp-op",
+                "default-value": "src-over",
+                "default-meaning": "Add the current symbolizer on top of other symbolizer.",
+                "doc": "Composite operation. This defines how this symbolizer should behave relative to symbolizers atop or below it.",
+                "type": [
+                    "multiply",
+                    "overlay"
+                ],
+                "expression":true
+            },
             "stroke": {
                 "css": "marker-line-color",
                 "doc": "The color of the stroke around the marker.",
