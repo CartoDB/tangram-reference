@@ -2,10 +2,10 @@
   "author": "Carto",
   "name": "tangram-reference",
   "description": "Reference for Tangram Styling Options",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cartodb/trangram-reference.git"
+    "url": "git://github.com/cartodb/tangram-reference.git"
   },
   "scripts": {
       "test": "mocha -R spec --timeout 50000"
