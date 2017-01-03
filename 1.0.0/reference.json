@@ -92,6 +92,7 @@
                 "doc": "Composite operation. This defines how this symbolizer should behave relative to symbolizers atop or below it.",
                 "type": [
                     "multiply",
+		     "add",
                     "overlay"
                 ],
                 "expression":true
