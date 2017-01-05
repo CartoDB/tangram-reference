@@ -15,6 +15,29 @@
                 "doc": "The opacity of the polygon",
                 "default-value": 1,
                 "default-meaning": "opaque"
+            },
+            "comp-op": {
+                "css": "polygon-comp-op",
+                "default-value": "src-over",
+                "default-meaning": "Add the current symbolizer on top of other symbolizer.",
+                "doc": "Composite operation. This defines how this symbolizer should behave relative to symbolizers atop or below it.",
+                "type": [
+                    "multiply",
+                    "add",
+                    "overlay"
+                ],
+                "expression": true
+            }
+        },
+        "polygon-pattern": {
+            "file": {
+                "css": "polygon-pattern-file",
+                "type": "uri",
+                "expression": true,
+                "default-value": "none",
+                "required": true,
+                "doc": "Image to use as a repeated pattern fill within a polygon. Accepted formats: svg, jpg, png, tiff, and webp.",
+                "default-meaning": ""
             }
         },
         "line": {
@@ -62,6 +85,26 @@
                 "expression": true,
                 "doc": "The display of line endings.",
                 "default-meaning": "The line endings will be rendered using a butt look."
+            },
+            "comp-op": {
+                "css": "line-comp-op",
+                "default-value": "overlay",
+                "default-meaning": "Add the current symbolizer on top of other symbolizer.",
+                "doc": "Composite operation. This defines how this symbolizer should behave relative to symbolizers atop or below it.",
+                "type": [
+                    "multiply",
+                    "add",
+                    "overlay"
+                ],
+                "expression": true
+            },
+            "stroke-dasharray": {
+                "css": "line-dasharray",
+                "type": "numbers",
+                "expression": true,
+                "doc": "A pair of length values [a,b], where (a) is the dash length and (b) is the gap length respectively. More than two values are supported for more complex patterns.",
+                "default-value": "none",
+                "default-meaning": "The line will be drawn without dashes."
             }
         },
         "markers": {
