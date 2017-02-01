@@ -127,7 +127,8 @@
         "css": "marker-fill",
         "default-value": "blue",
         "doc": "The color of the area of the marker.",
-        "type": "color"
+        "type": "color",
+        "expression": true
       },
       "allow-overlap": {
         "css": "marker-allow-overlap",
