@@ -125,7 +125,7 @@
       },
       "fill": {
         "css": "marker-fill",
-        "default-value": "blue",
+        "default-value": "#FFF",
         "doc": "The color of the area of the marker.",
         "type": "color",
         "expression": true
