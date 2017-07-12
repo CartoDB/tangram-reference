@@ -2,7 +2,7 @@
   "author": "Carto",
   "name": "tangram-reference",
   "description": "Reference for Tangram Styling Options",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "repository": {
     "type": "git",
     "url": "git://github.com/cartodb/tangram-reference.git"
