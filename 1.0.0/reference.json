@@ -248,7 +248,7 @@
         "type": "float"
       }
     },
-    "dots": {
+    "dot": {
       "opacity": {
         "css": "dot-opacity",
         "doc": "The overall opacity of the dot.",
