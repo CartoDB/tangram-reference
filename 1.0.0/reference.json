@@ -247,6 +247,50 @@
         "expression": true,
         "type": "float"
       }
+    },
+    "dots": {
+      "opacity": {
+        "css": "dot-opacity",
+        "doc": "The overall opacity of the dot.",
+        "default-value": 1,
+        "default-meaning": "The dot opacityis 1.",
+        "type": "float"
+      },
+      "fill": {
+        "css": "dot-fill",
+        "default-value": "#FFF",
+        "doc": "The color of the area of the dot.",
+        "type": "color",
+        "expression": true
+      },
+      "width": {
+        "css": "dot-width",
+        "default-value": 10.0,
+        "doc": "The width of the dot, if using one of the default types.",
+        "type": "float",
+        "expression": true,
+        "default-meaning": "The dot width is 10 pixels."
+      },
+      "height": {
+        "css": "dot-height",
+        "default-value": 10.0,
+        "doc": "The height of the dot, if using one of the default types.",
+        "type": "float",
+        "expression": true,
+        "default-meaning": "The dot height is 10 pixels."
+      },
+      "comp-op": {
+        "css": "dot-comp-op",
+        "default-value": "src-over",
+        "default-meaning": "Add the current symbolizer on top of other symbolizer.",
+        "doc": "Composite operation. This defines how this symbolizer should behave relative to symbolizers atop or below it.",
+        "type": [
+          "multiply",
+          "add",
+          "overlay"
+        ],
+        "expression": true
+      }
     }
   },
   "colors": {
