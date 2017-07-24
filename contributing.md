@@ -1,53 +1,26 @@
-## Contributing to Mapnik Reference
+## Contributing to Tangram Reference
 
-We welcome contributions. Please provide pull requests and notify @springmeyer for review.
+We welcome contributions. 
+## Building
 
-### Releasing
+	npm install
 
-1) Create a milestone for the upcoming release
+or
 
- - Assign tickets to it
- - Notify other contributors
- - Discuss, if needed, what the version # should be based on the types of changes anticipated
+	yarn
 
-2) If the version in `package.json` is not already updated for the new release:
+## Testing
 
-- Update the version
-- Do a bump commit
+	npm test
+or
 
-```bash
-git commit -a -m "bump to v0.8.1"
-```
+	yarn test
+	
+## Releasing
 
-Only bump the version when committing to master (not in pull requests).
+1. Create a new branch with the changes
+2. Create a PR passing all the tests
+3. Merge the PR once approved
+4. Update the package.json version field.
 
-3) Update the datasources:
-
-Run:
-
-```
-make
-```
-
-And commit the changes. This will edit the `datasources.json` based on the `datasources.template.json`.
-
-
-4) Make sure all tests are passing on travis: [![Build Status](https://travis-ci.org/mapnik/mapnik-reference.svg?branch=master)](https://travis-ci.org/mapnik/mapnik-reference)
-
-4) Ensure the changelog lists the upcoming version and details of what changed
-
-5) Tag the new version and upload to github
-
-```bash
-git tag -a v0.8.1 -m "tagging v0.8.1"
-git push --tags
-```
-
-6) Publish to npm
-
-NOTE: make sure your git checkout is clean first: `git status` should show no changes or untracked files.
-
-```bash
-npm publish
-```
 
