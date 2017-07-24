@@ -20,8 +20,5 @@ before_install:
 install:
  - npm install
 
-before_script:
- - make
-
 script:
- - make test
+ - npm run test
