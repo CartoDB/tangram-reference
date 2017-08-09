@@ -8,10 +8,10 @@
     "url": "git://github.com/cartodb/tangram-reference.git"
   },
   "scripts": {
-      "test": "mocha -R spec --timeout 50000"
+    "test": "mocha"
   },
   "devDependencies": {
-    "mocha": "1.x",
-    "glob":"4.x"
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
   }
 }
