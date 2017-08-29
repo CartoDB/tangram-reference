@@ -22,8 +22,8 @@
         "default-meaning": "Add the current symbolizer on top of other symbolizer.",
         "doc": "Composite operation. This defines how this symbolizer should behave relative to symbolizers atop or below it.",
         "type": [
-          "add",
-          "overlay"
+            "plus",
+            "src-over"
         ],
         "expression": false
       }
@@ -87,12 +87,12 @@
       },
       "comp-op": {
         "css": "line-comp-op",
-        "default-value": "overlay",
+        "default-value": "src-over",
         "default-meaning": "Add the current symbolizer on top of other symbolizer.",
         "doc": "Composite operation. This defines how this symbolizer should behave relative to symbolizers atop or below it.",
         "type": [
-          "add",
-          "overlay"
+            "plus",
+            "src-over"
         ],
         "expression": false
       },
@@ -151,8 +151,8 @@
         "default-meaning": "Add the current symbolizer on top of other symbolizer.",
         "doc": "Composite operation. This defines how this symbolizer should behave relative to symbolizers atop or below it.",
         "type": [
-          "add",
-          "overlay"
+            "plus",
+            "src-over"
         ],
         "expression": false
       },
