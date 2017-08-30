@@ -13,7 +13,6 @@
         "css": "polygon-opacity",
         "type": "float",
         "doc": "The opacity of the polygon",
-        "default-value": 1,
         "default-meaning": "Color is fully opaque."
       },
       "comp-op": {
@@ -55,7 +54,6 @@
       },
       "stroke-opacity": {
         "css": "line-opacity",
-        "default-value": 1,
         "type": "float",
         "default-meaning": "opaque",
         "doc": "The opacity of a line"
@@ -109,7 +107,6 @@
       "opacity": {
         "css": "marker-opacity",
         "doc": "The overall opacity of the marker, if set, overrides both the opacity of both the fill and stroke",
-        "default-value": 1,
         "default-meaning": "The stroke-opacity and fill-opacity will be used",
         "type": "float"
       },
@@ -140,7 +137,6 @@
       "fill-opacity": {
         "css": "marker-fill-opacity",
         "doc": "The fill opacity of the marker.",
-        "default-value": 1.0,
         "expression": true,
         "default-meaning": "Color is fully opaque.",
         "type": "float"
@@ -174,7 +170,6 @@
       },
       "stroke-opacity": {
         "css": "marker-line-opacity",
-        "default-value": 1.0,
         "default-meaning": "Color is fully opaque.",
         "doc": "The opacity of a line.",
         "type": "float",
@@ -232,7 +227,6 @@
       "opacity": {
         "css": "text-opacity",
         "doc": "A number from 0 to 1 specifying the opacity for the text.",
-        "default-value": 1.0,
         "default-meaning": "Fully opaque",
         "expression": true,
         "type": "float"
