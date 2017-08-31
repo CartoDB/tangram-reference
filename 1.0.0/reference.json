@@ -63,7 +63,6 @@
         "default-value": "miter",
         "type": [
           "miter",
-          "miter-revert",
           "round",
           "bevel"
         ],
