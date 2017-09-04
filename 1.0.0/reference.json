@@ -13,8 +13,7 @@
         "css": "polygon-opacity",
         "type": "float",
         "doc": "The opacity of the polygon",
-        "default-value": 1,
-        "default-meaning": "opaque"
+        "default-meaning": "Color is fully opaque."
       },
       "comp-op": {
         "css": "polygon-comp-op",
@@ -22,11 +21,10 @@
         "default-meaning": "Add the current symbolizer on top of other symbolizer.",
         "doc": "Composite operation. This defines how this symbolizer should behave relative to symbolizers atop or below it.",
         "type": [
-          "multiply",
-          "add",
-          "overlay"
+            "plus",
+            "src-over"
         ],
-        "expression": true
+        "expression": false
       }
     },
     "polygon-pattern": {
@@ -56,7 +54,6 @@
       },
       "stroke-opacity": {
         "css": "line-opacity",
-        "default-value": 1,
         "type": "float",
         "default-meaning": "opaque",
         "doc": "The opacity of a line"
@@ -66,7 +63,6 @@
         "default-value": "miter",
         "type": [
           "miter",
-          "miter-revert",
           "round",
           "bevel"
         ],
@@ -88,15 +84,14 @@
       },
       "comp-op": {
         "css": "line-comp-op",
-        "default-value": "overlay",
+        "default-value": "src-over",
         "default-meaning": "Add the current symbolizer on top of other symbolizer.",
         "doc": "Composite operation. This defines how this symbolizer should behave relative to symbolizers atop or below it.",
         "type": [
-          "multiply",
-          "add",
-          "overlay"
+            "plus",
+            "src-over"
         ],
-        "expression": true
+        "expression": false
       },
       "stroke-dasharray": {
         "css": "line-dasharray",
@@ -111,16 +106,16 @@
       "opacity": {
         "css": "marker-opacity",
         "doc": "The overall opacity of the marker, if set, overrides both the opacity of both the fill and stroke",
-        "default-value": 1,
         "default-meaning": "The stroke-opacity and fill-opacity will be used",
         "type": "float"
       },
       "fill": {
         "css": "marker-fill",
-        "default-value": "#FFF",
+        "default-value": "blue",
         "doc": "The color of the area of the marker.",
         "type": "color",
-        "expression": true
+        "expression": true,
+        "default-meaning": "The marker fill color is blue."
       },
       "allow-overlap": {
         "css": "marker-allow-overlap",
@@ -141,7 +136,6 @@
       "fill-opacity": {
         "css": "marker-fill-opacity",
         "doc": "The fill opacity of the marker.",
-        "default-value": 1.0,
         "expression": true,
         "default-meaning": "Color is fully opaque.",
         "type": "float"
@@ -152,10 +146,10 @@
         "default-meaning": "Add the current symbolizer on top of other symbolizer.",
         "doc": "Composite operation. This defines how this symbolizer should behave relative to symbolizers atop or below it.",
         "type": [
-          "add",
-          "overlay"
+            "plus",
+            "src-over"
         ],
-        "expression": true
+        "expression": false
       },
       "stroke": {
         "css": "marker-line-color",
@@ -175,7 +169,6 @@
       },
       "stroke-opacity": {
         "css": "marker-line-opacity",
-        "default-value": 1.0,
         "default-meaning": "Color is fully opaque.",
         "doc": "The opacity of a line.",
         "type": "float",
@@ -196,7 +189,7 @@
         "type": [
           "ellipse"
         ],
-        "expression": true,
+        "expression": false,
         "default-value": "ellipse",
         "default-meaning": "The marker shape is an ellipse.",
         "doc": "The default marker-type. If a SVG file is not given as the marker-file parameter, the renderer provides either an arrow or an ellipse (a circle if height is equal to width).",
@@ -233,7 +226,6 @@
       "opacity": {
         "css": "text-opacity",
         "doc": "A number from 0 to 1 specifying the opacity for the text.",
-        "default-value": 1.0,
         "default-meaning": "Fully opaque",
         "expression": true,
         "type": "float"
