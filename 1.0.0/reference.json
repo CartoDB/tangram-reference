@@ -238,27 +238,39 @@
       }
     },
     "dot": {
-      "opacity": {
-        "css": "dot-opacity",
-        "doc": "The overall opacity of the dot.",
-        "default-value": 1,
-        "default-meaning": "The dot opacityis 1.",
-        "type": "float"
-      },
       "fill": {
         "css": "dot-fill",
-        "default-value": "#FFF",
+        "default-value": "gray",
         "doc": "The color of the area of the dot.",
         "type": "color",
+        "expression": true,
+        "default-meaning": "The dot fill color is gray."
+      },
+      "opacity": {
+        "css": "dot-opacity",
+        "doc": "The overall opacity of the marker, if set, overrides both the opacity of both the fill and stroke",
+        "default-meaning": "Do not override the alpha channel.",
+        "type": "float",
         "expression": true
       },
       "width": {
         "css": "dot-width",
-        "default-value": 10.0,
+        "default-value": 1.0,
         "doc": "The width of the dot, if using one of the default types.",
         "type": "float",
         "expression": true,
-        "default-meaning": "The dot width is 10 pixels."
+        "default-meaning": "The dot width is 1 pixels."
+      },
+      "comp-op": {
+        "css": "dot-comp-op",
+        "default-value": "src-over",
+        "default-meaning": "Add the current symbolizer on top of other symbolizer.",
+        "doc": "Composite operation. This defines how this symbolizer should behave relative to symbolizers atop or below it.",
+        "type": [
+            "plus",
+            "src-over"
+        ],
+        "expression": false
       }
     }
   },
