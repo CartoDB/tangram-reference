@@ -1,4 +1,6 @@
-# Tangram-reference [![Build Status](https://travis-ci.org/CartoDB/tangram-reference.svg?branch=unsupported-properties)](https://travis-ci.org/CartoDB/tangram-reference)
+# [DEPRECATED] Tangram-reference [![Build Status](https://travis-ci.org/CartoDB/tangram-reference.svg?branch=unsupported-properties)](https://travis-ci.org/CartoDB/tangram-reference) ![No Maintenance Intended](https://img.shields.io/badge/No%20Maintenance%20Intended-%E2%9C%95-red.svg)
+
+This is no longer supported.
 
 Tangram-reference is a JSON specification of the CartoCSS vendor style options that [Torque](https://github.com/CartoDB/torque) provides. Inspired by [mapnik-reference](https://github.com/mapnik/mapnik-reference), *it is useful for building parsers, tests, compilers, and syntax highlighting/checking for languages.*
 
